@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-05-25T16:41:36.067274" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Datadriven" source="C:\QA learning\robot\QA-Project\tests\test_datadriven.robot">
+<test id="s1-t1" name="ทดสอบ Login หลายชุด" line="9">
+<kw name="Login แล้วเช็คผล">
+<kw name="เปิดเบราว์เซอร์" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:41:36.331361" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com'.</msg>
+<arg>https://the-internet.herokuapp.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-25T16:41:36.331206" elapsed="5.627687"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-25T16:41:41.959121" elapsed="0.032174"/>
+</kw>
+<status status="PASS" start="2026-05-25T16:41:36.330716" elapsed="5.660722"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:41:41.991676" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
+<arg>https://the-internet.herokuapp.com/login</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-05-25T16:41:41.991552" elapsed="0.619549"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:41:42.611787" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T16:41:42.611293" elapsed="0.093817"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:41:42.705577" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T16:41:42.705284" elapsed="0.061093"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:41:42.766866" level="INFO">Clicking element 'css=button[type='submit']'.</msg>
+<arg>css=button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T16:41:42.766582" elapsed="0.620524"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-25T16:41:43.387268" elapsed="0.014210"/>
+</kw>
+<kw name="ปิดเบราว์เซอร์" owner="keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-25T16:41:43.402013" elapsed="2.171485"/>
+</kw>
+<status status="PASS" start="2026-05-25T16:41:43.401677" elapsed="2.172073"/>
+</kw>
+<arg>tomsmith</arg>
+<arg>SuperSecretPassword!</arg>
+<arg>You logged into a secure area!</arg>
+<status status="PASS" start="2026-05-25T16:41:36.330362" elapsed="9.243523"/>
+</kw>
+<kw name="Login แล้วเช็คผล">
+<kw name="เปิดเบราว์เซอร์" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:41:45.576376" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com'.</msg>
+<arg>https://the-internet.herokuapp.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-25T16:41:45.576029" elapsed="5.505795"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-25T16:41:51.082021" elapsed="0.033096"/>
+</kw>
+<status status="PASS" start="2026-05-25T16:41:45.575470" elapsed="5.539773"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:41:51.115504" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
+<arg>https://the-internet.herokuapp.com/login</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-05-25T16:41:51.115379" elapsed="0.881512"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:41:51.997634" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T16:41:51.997070" elapsed="0.089371"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:41:52.087341" level="INFO">Typing text 'wrongpassword' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T16:41:52.086962" elapsed="0.058903"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:41:52.146615" level="INFO">Clicking element 'css=button[type='submit']'.</msg>
+<arg>css=button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T16:41:52.146141" elapsed="0.635705"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-25T16:41:52.782009" elapsed="0.011279"/>
+</kw>
+<kw name="ปิดเบราว์เซอร์" owner="keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-25T16:41:52.793998" elapsed="2.180113"/>
+</kw>
+<status status="PASS" start="2026-05-25T16:41:52.793571" elapsed="2.180795"/>
+</kw>
+<arg>tomsmith</arg>
+<arg>wrongpassword</arg>
+<arg>Your password is invalid!</arg>
+<status status="PASS" start="2026-05-25T16:41:45.574718" elapsed="9.399782"/>
+</kw>
+<kw name="Login แล้วเช็คผล">
+<kw name="เปิดเบราว์เซอร์" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:41:54.976798" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com'.</msg>
+<arg>https://the-internet.herokuapp.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-25T16:41:54.976464" elapsed="4.669394"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-25T16:41:59.646086" elapsed="0.031925"/>
+</kw>
+<status status="PASS" start="2026-05-25T16:41:54.975954" elapsed="4.702164"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:41:59.678396" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
+<arg>https://the-internet.herokuapp.com/login</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-05-25T16:41:59.678253" elapsed="0.621274"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:42:00.300091" level="INFO">Typing text 'baduser' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T16:42:00.299706" elapsed="0.089274"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:42:00.390107" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T16:42:00.389382" elapsed="0.067961"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-25T16:42:00.458560" level="INFO">Clicking element 'css=button[type='submit']'.</msg>
+<arg>css=button[type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-25T16:42:00.457769" elapsed="0.062278"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-25T16:42:00.520204" elapsed="0.806250"/>
+</kw>
+<kw name="ปิดเบราว์เซอร์" owner="keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-25T16:42:01.327296" elapsed="2.156760"/>
+</kw>
+<status status="PASS" start="2026-05-25T16:42:01.326744" elapsed="2.157587"/>
+</kw>
+<arg>baduser</arg>
+<arg>SuperSecretPassword!</arg>
+<arg>Your username is invalid!</arg>
+<status status="PASS" start="2026-05-25T16:41:54.975174" elapsed="8.509328"/>
+</kw>
+<status status="PASS" start="2026-05-25T16:41:36.329435" elapsed="27.155748"/>
+</test>
+<status status="PASS" start="2026-05-25T16:41:36.068793" elapsed="27.418057"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Datadriven" id="s1" pass="1" fail="0" skip="0">Test Datadriven</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
